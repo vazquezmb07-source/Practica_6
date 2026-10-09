@@ -1,0 +1,79 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.contenido{
+    height: 100vh;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+#zona1 {
+    background-image: url('../images/imgLamborgini.jpg');
+}
+#zona2{
+    background-image: url('../images/imgCreador.jpg');
+    align-items: center;
+}
+#zona3{
+    background-image: url('../images/imglambo1.jpg');
+    align-items: center;
+}
+#zona4{
+    background-image: url('../images/imglambo2.jpg');
+    align-items: center;
+}
+#zona5{
+    background-image: url('../images/imglambo3.jpg');
+    align-items: center;
+}
+#zona6{
+    background-image: url('../images/imglambo4.jpg');
+    align-items: center;
+}
+/*menu*/
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 10px 0;
+    transition: 0.4s ease;
+}
+
+ul {
+    list-style: none;
+    display: flex;             /* Pone los botones en horizontal */
+    justify-content: center;   /* Centra los botones en la pantalla */
+    align-items: center;
+    gap: 15px;                 /* Espacio entre cada botón */
+    margin: 0;
+    padding: 0;
+}
+
+ul a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(8, 3, 1);
+    text-decoration: none;
+    border: 1px solid rgb(7, 8, 63);
+    padding: 12px 15px;     
+    width: 200px;             /* Ajustado para que quepan bien arriba */
+    height: 50px; 
+    text-align: center;
+    font-size: 15px;         
+    transition: 0.4s ease;
+}
+
+a:hover {
+    transform: translateY(-5px); /* Se mueve un poco hacia arriba al pasar el mouse */
+    background-color: rgb(14, 27, 204);
+    color: beige;
+    border: 0;
+}
